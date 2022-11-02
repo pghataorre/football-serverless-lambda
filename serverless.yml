@@ -1,0 +1,10 @@
+service: football-serverless-lambda
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: live
+  region: eu-west-2
+
+functions:
+  getManager:
+    handler: src/handler.getManager
