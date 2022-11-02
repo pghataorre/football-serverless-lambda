@@ -13,11 +13,11 @@ jobs:
         node-version: [16.x]
     steps:
     - uses: actions/checkout@v3
-    - name: CHECKING OUT CODE
+    - name: SET-UP ENVIRONMENT
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - name: serverless deploy
+    - name: SERVERLESS DEPLOY
       uses: serverless/github-action@v3.1
       with:
         args: deploy
