@@ -6,6 +6,7 @@ module.exports.getManager = async (event) => {
 	let response;
 
 	const teamId = event.pathParameters.teamId;
+	console.log('am local - deployed lambda');
 
 	switch (true) {
 		case teamId === '-1':
