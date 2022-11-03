@@ -8,3 +8,7 @@ provider:
 functions:
   getManager:
     handler: src/handler.getManager
+    events:
+    - httpApi:
+        path: /
+        method: get
